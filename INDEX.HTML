@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TAHU ISI PEDAS</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="home" class="container">
+            <header>
+                <div class="tahu">
+                    <h1>TAHU ISI PEDAS</h1>
+                    <p>Kriuk-Kriuk Pedas, Sekali Coba Langsung Gas!</p>
+                </div>
+                <hr>
+            </header>
+            <div class="cards">
+                <div class="card" onclick="showPage('about')">
+                    <div class="icon">🌶️</div>
+                    <h2>Tentang Produk</h2>
+                    <p>Kenali lebih jauh tahu isi pedas kami.</p>
+                    <button>Lihat Selengkapnya</button>
+                </div>
+                <div class="card" onclick="showPage('whatsapp')">
+                    <div class="icon">📱</div>
+                    <h2>WhatsApp</h2>
+                    <p>Hubungi kami untuk melakukan pemesanan</p>
+                    <button>Hubungi Kami</button>
+                </div>
+                <div class="card" onclick="showPage('order')">
+                    <div class="icon">🛒</div>
+                    <h2>Cara Pembelian</h2>
+                    <p>Lihat langkah-langkah untuk membeli produk.</p>
+                    <button>Cara Membeli</button>
+                </div>
+            </div>
+            <footer>
+                <p>
+                    Yuk, cobain Tahu Isi Pedas kami dan rasakan sensasi pedas
+                    gurih yang bikin susah berhenti! 😋 Pedasnya nampol, rasanya
+                    mantul! 🔥
+                </p>
+            </footer>
+        </div>
+        <div id="about" class="detail-page">
+            <div class="detail-box">
+                <div class="big-icon">🌶️</div>
+                <h1>Tentang Tahu Isi Pedas</h1>
+                <p>
+                    Tahu Isi Pedas adalah camilan gurih dan renyah yang berisi
+                    sayuran dengan cita rasa pedas yang cocok dinikmati kapan
+                    saja.
+                </p>
+                <div class="info">
+                    <h3>✨ Kelebihan Produk</h3>
+                    <p>✓ Renyah dan gurih</p>
+                    <p>✓ Isian sayuran yang lezat</p>
+                    <p>✓ Memiliki cita rasa pedas</p>
+                    <p>✓ Cocok untuk teman bersantai</p>
+                </div>
+                <h2>Harga</h2>
+                <p class="price">Rp5.000 / pcs</p>
+                <button class="back" onclick="goHome()">← Kembali</button>
+            </div>
+        </div>
+        <div id="whatsapp" class="detail-page">
+            <div class="detail-box whatsapp-box">
+                <div class="big-icon">📱</div>
+                <h1>Pesan Melalui WhatsApp</h1>
+                <p>
+                    Ingin membeli Tahu Isi Pedas? Silakan hubungi kami melalui
+                    WhatsAp
+                </p>
+                <div class="contact">
+                    <h2>📞 Nomor WhatsApp</h2>
+                    <p class="number">08896-0100-1632</p>
+                    <button class="wa-button" onclick="openWhatsApp()">
+                        💬 Chat WhatsApp
+                    </button>
+                </div>
+                <button class="back" onclick="goHome()">← Kembali</button>
+            </div>
+        </div>
+
+        <div id="order" class="detail-page">
+            <div class="detail-box">
+                <div class="big-icon">🛒</div>
+                <h1>Cara Pembelian</h1>
+                <div class="steps">
+                    <div class="step">
+                        <span>1</span>
+                        <div>
+                            <h3>Pilih Produk</h3>
+                            <p>Pilih jumlah tahu isi pedas yang ingin dibeli</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span>2</span>
+                        <div>
+                            <h3>Hubungi WhatsApp</h3>
+                            <p>
+                                Hubungi nomor WhatsApp penjual untuk melakukan
+                                pemesanan
+                            </p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span>3</span>
+                        <div>
+                            <h3>Konfirmasi Pesanan</h3>
+                            <p>Berikan jumlah pesanan dan lokasi pengambilan</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span>4</span>
+                        <div>
+                            <h3>Pesanan Diproses</h3>
+                            <p>
+                                Pesanan akan disiapkan dan dapat diambil sesuai
+                                yang diorderkan
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="back" onclick="goHome()">← Kembali</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
